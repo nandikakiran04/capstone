@@ -8,6 +8,7 @@ const vendorSchema = new mongoose.Schema({
   website: { type: String },  
   contact: { type: String },
   email: { type: String },
+  MonthlyCharges: {type: Number},
   pocName: { type: String, required: true },                   // Point of contact - full name
   pocEmail: { type: String, required: true, lowercase: true, trim: true }, // Contact email
   pocPhone: { type: String, required: true },
